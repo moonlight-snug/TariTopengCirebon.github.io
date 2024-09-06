@@ -26,6 +26,7 @@ body {
 
 .navbar {
   background-color: #ad0707; /* Warna tradisional */
+  z-index: 9999;
 }
 
 .navbar-brand {
@@ -116,7 +117,7 @@ body {
 }
 
 .jenis-bj {
-  background-image: url(GAMBAR/BG7.png);
+  background-image: url(GAMBAR/BG8.png);
   background-position: center;
   background-size: cover;
   background-color: #ffd90000;
@@ -316,6 +317,17 @@ body {
 
 /* desktop */
 @media (min-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .tentang {
+    padding: 100px 0;
+  }
 }
 
 /* laptop */
@@ -327,7 +339,7 @@ body {
 }
 
 /* Mobile */
-@media (max-width: 450px) {
+@media only screen and (max-width: 440px) {
   .card-container {
     flex-direction: column; /* Card akan vertikal pada layar kecil */
     align-items: center;
@@ -339,6 +351,13 @@ body {
   .card {
     width: 100%; /* Card akan menyesuaikan lebar layar */
     max-width: 300px; /* Memberikan batas maksimal lebar card */
+  }
+  #drag {
+    display: inline-block;
+    margin: revert-layer;
+  }
+  .tentang-t {
+    padding: 250px 0;
   }
 }
 
