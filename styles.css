@@ -1,0 +1,379 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+main {
+  flex: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffe552;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Gaya umum untuk gambar kecil */
+.gambar-kecil {
+  display: none;
+  position: fixed;
+}
+
+.navbar {
+  background-color: #ad0707; /* Warna tradisional */
+}
+
+.navbar-brand {
+  font-family: italic; /* Menggunakan font dari Google Fonts */
+  font-weight: 600; /* Mengatur ketebalan font */
+}
+
+.navbar-brand span {
+  font-family: sansita swashead;
+  color: #ffee07;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffee07;
+}
+.nav-link .nav-item .navbar-nav {
+  color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #ad0707;
+}
+.dropdown-item {
+  color: #fff;
+}
+.dropdown-item:hover {
+  background-color: #cfc4c4;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 100px 0;
+  background-image: url("GAMBAR/BG8.png");
+  background-size: cover;
+  background-color: #ffd90000;
+  background-position: center;
+  color: #030303;
+}
+
+#hero-img:hover {
+  content: url("GAMBAR/tpp2-removebg-preview.png"); /* Gambar akan berubah ketika di-hover */
+  transition: 0.5s ease; /* Efek transisi lembut saat berganti gambar */
+}
+#hero-img2:hover {
+  content: url("GAMBAR/bg4.png"); /* Gambar akan berubah ketika di-hover */
+  transition: 0.5s ease; /* Efek transisi lembut saat berganti gambar */
+}
+
+#hero-img {
+  opacity: 1;
+  margin-top: -90px;
+  margin-left: 120px;
+}
+#hero-img2 {
+  opacity: 1;
+  margin-top: -90px;
+  margin-left: 120px;
+}
+
+.tentang {
+  background-image: url(GAMBAR/BG8.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #ffd90000;
+}
+
+.container-tt {
+  font-weight: bold;
+}
+.container-tt .text-center {
+  color: #000000;
+  text-shadow: 1.5px 1px 1px rgb(255, 255, 255);
+  margin-top: 5rem;
+}
+
+.jenis-tp {
+  background-image: url(GAMBAR/BG8.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #ffd90000;
+}
+
+.jenis-bj {
+  background-image: url(GAMBAR/BG7.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #ffd90000;
+}
+
+#sejarah {
+  background-image: url("GAMBAR/BG8.png");
+  background-size: cover;
+  background-position: center;
+  color: #0c0c0c;
+}
+
+#sejarah .lead {
+  font-size: 1.25rem;
+  color: #333;
+  text-align: center; /* Paragraf menjadi rata tengah */
+}
+
+#sejarah {
+  background-color: #ffe44e00;
+  padding: 100px 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.6; /* Mengatur transparansi gambar */
+  transition: opacity 0.3s ease;
+}
+
+/* Mengatur transparansi gambar ketika dihover */
+.hero-image:hover {
+  opacity: 1;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000000;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #000000;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+/* CSS untuk card */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: 10px #030303;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 40px;
+  box-shadow: 10px #030303;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  border-radius: 30px;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #070707;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.card-back {
+  background-color: #f8f9fa;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* footer */
+.footer-bottom {
+  border-top: 1px solid #ffd257;
+  text-align: center;
+}
+
+/* animasi baju  */
+#drag,
+#spin {
+  position: relative;
+  display: flex;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+}
+
+#spin img {
+  position: absolute;
+  width: 160%;
+  height: 100%;
+  line-height: 500px;
+  text-align: center;
+  box-shadow: 0 0 8px #880202;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, transparent);
+}
+
+#spin img:hover {
+  box-shadow: 0 0 15px #ffff;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0007);
+}
+
+#ground {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spinRevert {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+/* media queri */
+
+/* desktop */
+@media (min-width: 1024px) {
+}
+
+/* laptop */
+@media (min-width: 900px) {
+  .card {
+    width: 100%; /* Card akan menyesuaikan lebar layar */
+    max-width: 300px; /* Memberikan batas maksimal lebar card */
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .card-container {
+    flex-direction: column; /* Card akan vertikal pada layar kecil */
+    align-items: center;
+  }
+  .gambar-kecil {
+    display: block;
+  }
+
+  .card {
+    width: 100%; /* Card akan menyesuaikan lebar layar */
+    max-width: 300px; /* Memberikan batas maksimal lebar card */
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .gambar-kecil {
+    display: block;
+    position: fixed; /* Atur posisi gambar secara tetap */
+    right: -3px; /* Jarak dari tepi kanan */
+    bottom: -3px; /* Jarak dari tepi bawah */
+    width: 100px; /* Sesuaikan ukuran gambar */
+    height: auto; /* Pertahankan rasio aspek gambar */
+    z-index: 1000; /* Pastikan gambar berada di atas konten lain */
+  }
+
+  .card-container {
+    flex-direction: column; /* Card ditampilkan vertikal pada tablet */
+    align-items: center;
+  }
+
+  .card {
+    width: 100%; /* Card akan menyesuaikan lebar layar tablet */
+    max-width: 200px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}

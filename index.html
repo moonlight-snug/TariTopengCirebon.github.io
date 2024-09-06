@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Tari Topeng</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Gambar Kecil -->
+<img src="GAMBAR/gambar-kecil.png" alt="Gambar Kecil" class="gambar-kecil" data-aos="fade-up">
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+      <div class="container" data-aos="fade-right">
+        <a class="navbar-brand" href="#">Tari <span>Topeng</span>.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >
+               Jenis </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#jenis-topeng">Topeng</a>
+                <a class="dropdown-item" href="#jenis-Kostum">kostum</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sejarah">Sejarah</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Beranda -->
+    <main>
+      <section
+        id="beranda"
+        class="hero-section"
+        style="padding: 200px 0; animation: appear linear; animation-timeline: view(); animation-range: entry 0; "
+        data-aos="fade-up">
+      
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Penjelasan singkat di sebelah kiri -->
+            <div class="col-md-6 hero-text"  style="font-weight: bold;">
+              <h1>Keindahan Tari Topeng</h1>
+              <p>
+                Tari Topeng merupakan bagian dari warisan budaya Cirebon, memiliki pesona keindahan yang mengagumkan dalam konteks pariwisata lokal. Tari ini bukan sekadar seni pertunjukan semata, melainkan juga merupakan cerminan dari kearifan lokal dan kekayaan budaya yang patut dilestarikan. Dalam setiap geraknya, Tari Topeng menggambarkan kehidupan masyarakat Cirebon yang kaya akan warna dan kearifan.
+              </p>
+            </div>
+            <!-- Gambar di sebelah kanan -->
+            <div class="col-md-4 justify-content-start">
+              <img
+                src="GAMBAR/bg5.png"
+                alt="Tari Topeng"
+                class="hero-image img-fluid"
+                id="hero-img2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Tentang -->
+      <section
+        id="tentang"
+        style="padding: 150px 0; animation: appear linear; animation-timeline: view(); animation-range: entry 0;"
+        data-aos="fade-up"
+        class="tentang">
+
+        <div class="container-tt">
+          <h2 class="text-center" style="font-weight: bold;">Tentang Tari Topeng</h2>
+          <p class="text-center" style="padding: 0.5px 15px;">
+            Tari Topeng adalah salah satu kesenian asal Cirebon. Sama dengan kesenian lainnya di Jawa Barat, Tari Topeng Cirebon memiliki cerita, nilai historis, dan filosofisnya. 
+            Tari Topeng Cirebon memiliki makna yang cukup mendalam, yaitu tentang awal mula terciptanya alam semesta beserta manusia.
+          </p>
+        </div>
+        <div class="col-md-4 justify-content-start">
+              <img
+                src="GAMBAR/tpp1-removebg-preview.png"
+                alt="Tari Topeng"
+                class="hero-image img-fluid"
+                id="hero-img"
+              />
+            </div>
+      </section>
+
+      <!-- Section Jenis Topeng -->
+      <section id="jenis-topeng" style="animation: appear linear; animation-timeline: view(); animation-range: entry 0; padding: 160px 0; " class="jenis-tp">
+        <div class="container">
+          <h2 class="text-center"  style="font-weight: bold;">Jenis Topeng</h2>
+          <p class="text-center">
+            Berikut terdapat lima jenis atau lima wanda topeng cirebon diantaranya:
+          </p>
+          <!-- Card Container -->
+          <div class="container">
+            <div class="card-container">
+              <!-- Card 1 -->
+              <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="GAMBAR/kelana.png" alt="Topeng 1" />
+                  </div>
+                  <div class="card-back">
+                    <div class="card-content">
+                      <h1>KELANA</h1>
+                      <p>Topeng Kelana menggambarkan seseorang yang mempunyai sifat pemarah dan angkara murka.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 2 -->
+              <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="GAMBAR/panji.png" alt="Topeng 2" />
+                  </div>
+                  <div class="card-back">
+                    <div class="card-content">
+                      <h1>PANJI</h1>
+                      <p>Topeng jenis ini menggambarkan tentang seseorang yang berada dalam kondisi suci dan baru saja terlahir ke dunia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 3 -->
+              <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="GAMBAR/rumyang.png" alt="Topeng 3" />
+                  </div>
+                  <div class="card-back">
+                    <div class="card-content">
+                      <h3>RUMYANG</h3>
+                      <p>Topeng jenis ini adalah sebuah gambaran tentang seseorang yang telah memasuki dunia remaja.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 4 -->
+              <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="GAMBAR/samba.png" alt="Topeng 4" />
+                  </div>
+                  <div class="card-back">
+                    <div class="card-content">
+                      <h1>SAMBA</h1>
+                      <p>Topeng samba menggambarkan tentang seseorang yang sedang memasuki fase kanak-kanak.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Card 5 -->
+              <div class="card" onclick="toggleCard(this)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="GAMBAR/temenggung.png" alt="Topeng 5" />
+                  </div>
+                  <div class="card-back">
+                    <div class="card-content">
+                      <h4>TUMENGGUNG</h4>
+                      <p>Topeng yang satu ini memiliki makna yaitu sebuah gambaran tentang seseorang yang memiliki sifat tegas dan juga berbudi luhur.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Section Jenis Baju -->
+      <section
+        id="jenis-Kostum"
+        style="padding: 150px 0; animation: appear linear; animation-timeline: view(); animation-range: entry 0;" class="jenis-bj"
+      >
+
+      <h1 style="position: relative; text-align: center; margin-bottom: 150px;"  style="font-weight: bold;">Jenis Kostum</h1>
+      <div id="drag">
+          <div id="spin">
+            <img src="GAMBAR/Tp ttu.png" alt="Kelana" />
+            <img src="GAMBAR/Tp kt.png" alt="Panji" />
+            <img src="GAMBAR/Tp pt.png" alt="Samba" />
+            <img src="GAMBAR/Tp st.png" alt="Temenggung" />
+            <img src="GAMBAR/Tp_Rt-removebg-preview.png" alt="Rumyang" />
+          </div>
+          <div id="ground"></div>
+        </div>
+      </div>
+      </section>
+
+      <!-- Section Sejarah -->
+      <section id="sejarah" style="padding: 200px 0; animation: appear linear; animation-timeline: view(); animation-range: entry 0; background-color: #ffd90000;">
+        <div class="container">
+          <h2 class="text-center" style="font-weight: bold">
+            Sejarah Tari Topeng
+          </h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-8" style="padding: 10px 0">
+              <p class="lead text-center">
+                Tari topeng sudah ada sejak abad ke 10 Masehi. Tarian ini kemudian berkembang pada abad ke 10 hingga ke 16 Masehi. Saat itu adalah masa pemerintahan Prabu Panji Dewa. Beliau adalah Raja Jenggala yang ada di Jawa Timur. Lalu seiring berjalannya waktu, tari topeng mulai menyebar ke beberapa daerah yang ada di Jawa Barat. Salah satunya adalah daerah Cirebon.
+              </p>
+              <p class="lead text-center">
+                Ketika tari topeng hadir di daerah Cirebon, tarian ini kemudian berbaur atau menyatu dengan kesenian daerah. Sehingga hal tersebut menciptakan sebuah tarian yang khas dan unik. Tari ini mempunyai makna, simbol, dan juga filosofi tertentu. Mulai dari percintaan, kepemimpinan, dan juga kebijaksanaan.
+              </p>
+              <p class="lead text-center">
+                Dalam pertunjukannya, makna-makna tersebut akan disampaikan kepada para penonton supaya lebih mudah dimengerti dan bisa diambil sebagai pelajaran dari tari topeng. Jika merujuk pada cerita yang beredar di masyarakat, Sunan Gunung Jati dan Sunan Kalijaga sempat menggunakan tari topeng sebagai media dakwah.
+              </p>
+              <p class="lead text-center">
+                Keduanya menyebarkan agama Islam menggunakan tarian ini. Tak hanya itu, mereka juga menggunakan tari topeng sebagai media hiburan di lingkungan keraton.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="footer" style="animation: appear linear; animation-timeline: view(); animation-range: entry 0;">
+          <div class="footer-bottom">
+              <p>&copy; 2024 Tari Topeng Cirebon | Melestarikan Warisan Budaya Nusantara</p>
+          </div>
+  </footer>
+
+    <!-- JavaScript Eksternal -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- my scrip -->
+    <script src="script.js"></script>
+  </body>
+</html>
