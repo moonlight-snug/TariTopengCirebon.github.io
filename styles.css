@@ -68,7 +68,6 @@ body {
   padding: 100px 0;
   background-image: url("GAMBAR/BG8.png");
   background-size: cover;
-  background-color: #ffd90000;
   background-position: center;
   color: #030303;
 }
@@ -97,7 +96,6 @@ body {
   background-image: url(GAMBAR/BG8.png);
   background-size: cover;
   background-position: center;
-  background-color: #ffd90000;
 }
 
 .container-tt {
@@ -113,14 +111,12 @@ body {
   background-image: url(GAMBAR/BG8.png);
   background-size: cover;
   background-position: center;
-  background-color: #ffd90000;
 }
 
 .jenis-bj {
   background-image: url(GAMBAR/BG8.png);
   background-position: center;
   background-size: cover;
-  background-color: #ffd90000;
 }
 
 #sejarah {
