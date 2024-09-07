@@ -123,3 +123,31 @@ document.onpointerdown = function (e) {
 
   return false;
 };
+
+// Menyimpan data ke localStorage
+function saveToLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+// Mengambil data dari localStorage
+function getFromLocalStorage(key) {
+  const data = localStorage.getItem(key);
+  return data ? JSON.parse(data) : null;
+}
+
+// Menggunakan jQuery untuk memanggil data
+$(document).ready(function () {
+  const cachedData = getFromLocalStorage("myData");
+  if (cachedData) {
+    $("#data-output").text(JSON.stringify(cachedData, null, 2)); // Menampilkan data di elemen HTML
+    console.log("Data dari localStorage:", cachedData);
+  } else {
+    $.get("https://api.example.com/data", function (data) {
+      saveToLocalStorage("myData", data);
+      $("#data-output").text(JSON.stringify(data, null, 2)); // Menampilkan data di elemen HTML
+      console.log("Data dari API:", data);
+    }).fail(function () {
+      console.log("Gagal memuat data dari API.");
+    });
+  }
+});
