@@ -3,8 +3,6 @@ function toggleCard(card) {
   card.classList.toggle("flipped");
 }
 
-// Tambahkan custom JavaScript di sini jika diperlukan di masa mendatang
-
 // Saat ini, fitur JavaScript bawaan dari Bootstrap sudah menangani interaksi navbar
 $(document).ready(function () {
   // Contoh jika ingin menambahkan JS
